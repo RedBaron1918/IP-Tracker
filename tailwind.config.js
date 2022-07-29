@@ -2,7 +2,11 @@
 module.exports = {
   content: ['./public/**/*.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage:(theme)=>({
+        "image-back":"url('img.png')",
+      })
+    },
   },
   plugins: [],
 }
